@@ -1,0 +1,956 @@
+
+
+<ion-content class="bg">
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <h1>FORM PPDB</h1>
+
+    <p>
+      Isi data pendaftaran dengan lengkap
+    </p>
+
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+
+    <!-- DATA PRIBADI -->
+    <h2 class="judul-section">
+      Data Pribadi Siswa
+    </h2>
+
+    <!-- NAMA -->
+    <ion-item>
+
+      <ion-icon
+      name="person-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="Nama Lengkap"
+      [(ngModel)]="nama">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- NISN -->
+    <ion-item>
+
+      <ion-icon
+      name="card-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="NISN"
+      [(ngModel)]="nisn">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- NIK -->
+    <ion-item>
+
+      <ion-icon
+      name="id-card-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="NIK"
+      [(ngModel)]="nik">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- JK -->
+    <ion-item>
+
+      <ion-icon
+      name="male-female-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-select
+      placeholder="Jenis Kelamin"
+      [(ngModel)]="jk">
+
+        <ion-select-option value="Laki-laki">
+          Laki-laki
+        </ion-select-option>
+
+        <ion-select-option value="Perempuan">
+          Perempuan
+        </ion-select-option>
+
+      </ion-select>
+
+    </ion-item>
+
+    <!-- TEMPAT LAHIR -->
+    <ion-item>
+
+      <ion-icon
+      name="location-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="Tempat Lahir"
+      [(ngModel)]="tempat_lahir">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- TANGGAL LAHIR -->
+    <ion-item>
+
+      <ion-icon
+      name="calendar-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      type="date"
+      [(ngModel)]="tanggal_lahir">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- AGAMA -->
+    <ion-item>
+
+      <ion-icon
+      name="moon-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-select
+      placeholder="Agama"
+      [(ngModel)]="agama">
+
+        <ion-select-option value="Islam">
+          Islam
+        </ion-select-option>
+        <ion-select-option value="kristen Protestan">
+          kristen Protestan
+        </ion-select-option>
+        <ion-select-option value="Katolik">
+          Katolik
+        </ion-select-option>
+        <ion-select-option value="Hindu">
+          Hindu
+        </ion-select-option>
+        <ion-select-option value="Buddha">
+          Buddha
+        </ion-select-option>
+        <ion-select-option value="Konghucu">
+          Konghucu
+        </ion-select-option>
+
+      </ion-select>
+
+    </ion-item>
+
+    <!-- STATUS ANAK -->
+<ion-item>
+
+  <ion-icon
+  name="people-outline"
+  slot="start">
+  </ion-icon>
+
+   <ion-select
+  placeholder="Status Anak"
+  [(ngModel)]="status_anak">
+   <ion-select-option value="Kandung">
+          Kandung
+        </ion-select-option>
+        <ion-select-option value="Angakat">
+          Angkat
+        </ion-select-option>
+        <ion-select-option value="Tiri">
+          Tiri
+        </ion-select-option>
+
+      </ion-select>
+  
+
+</ion-item>
+
+<!-- ANAK KE -->
+<ion-item>
+
+  <ion-icon
+  name="list-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-input
+  placeholder="Anak Ke"
+  [(ngModel)]="anakke">
+  </ion-input>
+
+</ion-item>
+
+    <!-- HP -->
+    <ion-item>
+
+      <ion-icon
+      name="call-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="No HP"
+      [(ngModel)]="hp">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- ASAL SEKOLAH -->
+    <ion-item>
+
+      <ion-icon
+      name="school-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="Asal Sekolah"
+      [(ngModel)]="asal_sekolah">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- DATA AYAH -->
+    <h2 class="judul-section">
+      Data Ayah
+    </h2>
+
+    <ion-item>
+
+      <ion-icon
+      name="person-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="Nama Ayah"
+      [(ngModel)]="nama_ayah">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-icon
+      name="card-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="NIK Ayah"
+      [(ngModel)]="nik_ayah">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-icon
+      name="book-outline"
+      slot="start">
+      </ion-icon>
+
+       <ion-select
+      placeholder="Pendidikan Ayah"
+      [(ngModel)]="pendidikan_ayah">
+        <ion-select-option value="Tidak sekolah">
+          Tidak sekolah
+        </ion-select-option>
+        <ion-select-option value="SD/Sederajat">
+         MI/SD
+        </ion-select-option>
+        <ion-select-option value="SMP/Sederajat">
+          MTS/SMP
+        </ion-select-option>
+        <ion-select-option value="SMP/Sederajat">
+         MA/SMA
+        </ion-select-option>
+        <ion-select-option value="D1/D2/D3">
+         D1/D2/D3
+        </ion-select-option>
+        <ion-select-option value="S1">
+         S1
+        </ion-select-option>
+        <ion-select-option value="S2">
+         S2
+        </ion-select-option>
+        <ion-select-option value="S3">
+         S3
+        </ion-select-option>
+      </ion-select>
+  
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-icon
+      name="briefcase-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-select
+      placeholder="Pekerjaan Ayah"
+      [(ngModel)]="pekerjaan_ayah">
+
+      <ion-select-option value=" Petani">
+          Petani
+        </ion-select-option>
+        <ion-select-option value="Nelayan">
+          Nelayan
+        </ion-select-option>
+        <ion-select-option value="Wiraswasta">
+          Wiraswasta
+        </ion-select-option>
+        <ion-select-option value="Pedagang">
+          Pedagang
+        </ion-select-option>
+        <ion-select-option value="Buruh">
+          Buruh
+        </ion-select-option>
+        <ion-select-option value="Karyawan Swasta">
+          Karyawan Swasta
+        </ion-select-option>
+        <ion-select-option value="PNS">
+          PNS
+        </ion-select-option>
+        <ion-select-option value="TNI/POLRI">
+         TNI/POLRI
+        </ion-select-option>
+        <ion-select-option value="Guru/Dosen">
+         Guru/Dosen
+        </ion-select-option>
+        <ion-select-option value="Ibu Rumah Tangga">
+         Ibu Rumah Tangga
+        </ion-select-option>
+        <ion-select-option value=" Tidak Bekerja">
+         Tidak Bekerja
+        </ion-select-option>
+        <ion-select-option value=" Lainnya">
+         Lainnya
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+
+  <ion-icon
+  name="cash-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-select
+  placeholder="Penghasilan Ayah"
+  [(ngModel)]="penghasilan_ayah">
+        <ion-select-option value="kuarang dari Rp500.000">
+          kuarang dari Rp500.000
+        </ion-select-option>
+        <ion-select-option value="Rp500.000-Rp1.000.000">
+         Rp500.000-Rp1.000.000
+        </ion-select-option>
+        <ion-select-option value="Rp1.000.000-Rp2.000.000">
+         Rp1.000.000-Rp2.000.000
+        </ion-select-option>
+        <ion-select-option value="Rp2.000.000-Rp5.000.000">
+         Rp2.000.000-Rp5.000.000
+        </ion-select-option>
+        <ion-select-option value="D1/D2/D3">
+         lebih dari Rp5.000.000
+        </ion-select-option>
+  </ion-select>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="call-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-input
+  placeholder="HP Orang Tua"
+  [(ngModel)]="hp_ortu">
+  </ion-input>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="home-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-textarea
+  placeholder="Alamat Orang Tua"
+  [(ngModel)]="alamat_ortu">
+  </ion-textarea>
+
+</ion-item>
+
+    <!-- DATA IBU -->
+    <h2 class="judul-section">
+      Data Ibu
+    </h2>
+
+    <ion-item>
+
+      <ion-icon
+      name="person-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="Nama Ibu"
+      [(ngModel)]="nama_ibu">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-icon
+      name="card-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="NIK Ibu"
+      [(ngModel)]="nik_ibu">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-icon
+      name="book-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-select
+      placeholder="Pendidikan Ibu"
+      [(ngModel)]="pendidikan_ibu">
+       <ion-select-option value="Tidak sekolah">
+          Tidak sekolah
+        </ion-select-option>
+        <ion-select-option value="SD/Sederajat">
+         MI/SD
+        </ion-select-option>
+        <ion-select-option value="SMP/Sederajat">
+          MTS/SMP
+        </ion-select-option>
+        <ion-select-option value="SMP/Sederajat">
+         MA/SMA
+        </ion-select-option>
+        <ion-select-option value="D1/D2/D3">
+         D1/D2/D3
+        </ion-select-option>
+        <ion-select-option value="S1">
+         S1
+        </ion-select-option>
+        <ion-select-option value="S2">
+         S2
+        </ion-select-option>
+        <ion-select-option value="S3">
+         S3
+        </ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-icon
+      name="briefcase-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-select
+      placeholder="Pekerjaan Ibu"
+      [(ngModel)]="pekerjaan_ibu">
+
+      <ion-select-option value=" Petani">
+          Petani
+        </ion-select-option>
+        <ion-select-option value="Nelayan">
+          Nelayan
+        </ion-select-option>
+        <ion-select-option value="Wiraswasta">
+          Wiraswasta
+        </ion-select-option>
+        <ion-select-option value="Pedagang">
+          Pedagang
+        </ion-select-option>
+        <ion-select-option value="Buruh">
+          Buruh
+        </ion-select-option>
+        <ion-select-option value="Karyawan Swasta">
+          Karyawan Swasta
+        </ion-select-option>
+        <ion-select-option value="PNS">
+          PNS
+        </ion-select-option>
+        <ion-select-option value="TNI/POLRI">
+         TNI/POLRI
+        </ion-select-option>
+        <ion-select-option value="Guru/Dosen">
+         Guru/Dosen
+        </ion-select-option>
+        <ion-select-option value="Ibu Rumah Tangga">
+         Ibu Rumah Tangga
+        </ion-select-option>
+        <ion-select-option value=" Tidak Bekerja">
+         Tidak Bekerja
+        </ion-select-option>
+        <ion-select-option value=" Lainnya">
+         Lainnya
+        </ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item>
+
+  <ion-icon
+  name="cash-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-select
+  placeholder="Penghasilan Ibu"
+  [(ngModel)]="penghasilan_ibu">
+  <ion-select-option value="kuarang dari Rp500.000">
+          kuarang dari Rp500.000
+        </ion-select-option>
+        <ion-select-option value="Rp500.000-Rp1.000.000">
+         Rp500.000-Rp1.000.000
+        </ion-select-option>
+        <ion-select-option value="Rp1.000.000-Rp2.000.000">
+         Rp1.000.000-Rp2.000.000
+        </ion-select-option>
+        <ion-select-option value="Rp2.000.000-Rp5.000.000">
+         Rp2.000.000-Rp5.000.000
+        </ion-select-option>
+        <ion-select-option value="D1/D2/D3">
+         lebih dari Rp5.000.000
+        </ion-select-option>
+  </ion-select>
+
+</ion-item>
+
+<!-- DATA WALI -->
+<h2 class="judul-section">
+  Data Wali
+</h2>
+
+<ion-item>
+
+  <ion-icon
+  name="person-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-input
+  placeholder="Nama Wali"
+  [(ngModel)]="nama_wali">
+  </ion-input>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="card-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-input
+  placeholder="NIK Wali"
+  [(ngModel)]="nik_wali">
+  </ion-input>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="book-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-select
+  placeholder="Pendidikan Wali"
+  [(ngModel)]="pendidikan_wali">
+   <ion-select-option value="Tidak sekolah">
+          Tidak sekolah
+        </ion-select-option>
+        <ion-select-option value="SD/Sederajat">
+         MI/SD
+        </ion-select-option>
+        <ion-select-option value="SMP/Sederajat">
+          MTS/SMP
+        </ion-select-option>
+        <ion-select-option value="SMP/Sederajat">
+         MA/SMA
+        </ion-select-option>
+        <ion-select-option value="D1/D2/D3">
+         D1/D2/D3
+        </ion-select-option>
+        <ion-select-option value="S1">
+         S1
+        </ion-select-option>
+        <ion-select-option value="S2">
+         S2
+        </ion-select-option>
+        <ion-select-option value="S3">
+         S3
+        </ion-select-option>
+  </ion-select>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="briefcase-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-select
+  placeholder="Pekerjaan Wali"
+  [(ngModel)]="pekerjaan_wali">
+  <ion-select-option value=" Petani">
+          Petani
+        </ion-select-option>
+        <ion-select-option value="Nelayan">
+          Nelayan
+        </ion-select-option>
+        <ion-select-option value="Wiraswasta">
+          Wiraswasta
+        </ion-select-option>
+        <ion-select-option value="Pedagang">
+          Pedagang
+        </ion-select-option>
+        <ion-select-option value="Buruh">
+          Buruh
+        </ion-select-option>
+        <ion-select-option value="Karyawan Swasta">
+          Karyawan Swasta
+        </ion-select-option>
+        <ion-select-option value="PNS">
+          PNS
+        </ion-select-option>
+        <ion-select-option value="TNI/POLRI">
+         TNI/POLRI
+        </ion-select-option>
+        <ion-select-option value="Guru/Dosen">
+         Guru/Dosen
+        </ion-select-option>
+        <ion-select-option value="Ibu Rumah Tangga">
+         Ibu Rumah Tangga
+        </ion-select-option>
+        <ion-select-option value=" Tidak Bekerja">
+         Tidak Bekerja
+        </ion-select-option>
+        <ion-select-option value=" Lainnya">
+         Lainnya
+        </ion-select-option>
+  </ion-select>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="cash-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-select
+  placeholder="Penghasilan Wali"
+  [(ngModel)]="penghasilan_wali">
+   <ion-select-option value="kuarang dari Rp500.000">
+          kuarang dari Rp500.000
+        </ion-select-option>
+        <ion-select-option value="Rp500.000-Rp1.000.000">
+         Rp500.000-Rp1.000.000
+        </ion-select-option>
+        <ion-select-option value="Rp1.000.000-Rp2.000.000">
+         Rp1.000.000-Rp2.000.000
+        </ion-select-option>
+        <ion-select-option value="Rp2.000.000-Rp5.000.000">
+         Rp2.000.000-Rp5.000.000
+        </ion-select-option>
+        <ion-select-option value="D1/D2/D3">
+         lebih dari Rp5.000.000
+        </ion-select-option>
+  </ion-select>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="home-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-textarea
+  placeholder="Alamat Wali"
+  [(ngModel)]="alamat_wali">
+  </ion-textarea>
+
+</ion-item>
+
+<ion-item>
+
+  <ion-icon
+  name="call-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-input
+  placeholder="HP Wali"
+  [(ngModel)]="hp_wali">
+  </ion-input>
+
+</ion-item>
+
+    <!-- ALAMAT -->
+    <h2 class="judul-section">
+      Alamat Siswa
+    </h2>
+
+    <ion-item>
+
+      <ion-icon
+      name="home-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-textarea
+      placeholder="Alamat"
+      [(ngModel)]="alamat">
+      </ion-textarea>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input
+      placeholder="Dusun"
+      [(ngModel)]="dusun">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input
+      placeholder="Desa"
+      [(ngModel)]="desa">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input
+      placeholder="Kecamatan"
+      [(ngModel)]="kecamatan">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input
+      placeholder="Kabupaten"
+      [(ngModel)]="kabupaten">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input
+      placeholder="Kode Pos"
+      [(ngModel)]="kode_pos">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- MINAT -->
+    <h2 class="judul-section">
+      Minat / Ekstrakurikuler
+    </h2>
+
+    <ion-item>
+
+      <ion-icon
+      name="star-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-select
+      placeholder="Pilih Ekstrakurikuler"
+      [(ngModel)]="minat">
+
+        <ion-select-option>
+          Pramuka
+        </ion-select-option>
+
+        <ion-select-option>
+          Tilawah
+        </ion-select-option>
+
+        <ion-select-option>
+          Tahfidz
+        </ion-select-option>
+
+        <ion-select-option>
+          Paskibra
+        </ion-select-option>
+
+        <ion-select-option>
+          Futsal
+        </ion-select-option>
+
+        <ion-select-option>
+          drum band
+        </ion-select-option>
+
+        <ion-select-option>
+          Fardu Kifayah
+        </ion-select-option>
+
+         <ion-select-option>
+          Sholawat
+        </ion-select-option>
+
+         <ion-select-option>
+          Fardu Kifayah
+        </ion-select-option>
+
+         <ion-select-option>
+          Yasin
+        </ion-select-option>
+
+         <ion-select-option>
+          Tahtim Tahlil
+        </ion-select-option>
+
+         <ion-select-option>
+          Tari & seni
+        </ion-select-option>
+
+         <ion-select-option>
+          Ceramah
+        </ion-select-option>
+
+         <ion-select-option>
+          silat
+        </ion-select-option>
+
+         <ion-select-option>
+          Marhaban
+        </ion-select-option>
+
+      </ion-select>
+
+    </ion-item>
+
+    <!-- NILAI AKHIR -->
+<h2 class="judul-section">
+  Nilai Akhir
+</h2>
+
+<ion-item>
+
+  <ion-icon
+  name="school-outline"
+  slot="start">
+  </ion-icon>
+
+  <ion-input
+  type="number"
+  placeholder="Nilai Akhir"
+  [(ngModel)]="nilai_akhir">
+  </ion-input>
+
+</ion-item>
+
+    <!-- FOTO -->
+    <h2 class="judul-section">
+      Upload Pas Foto
+    </h2>
+
+    <ion-item>
+
+      <ion-icon
+      name="image-outline"
+      slot="start">
+      </ion-icon>
+
+      <input
+      type="file"
+      (change)="ambilFoto($event)">
+
+    </ion-item>
+
+    <!-- BERKAS -->
+    <div class="berkas">
+
+      <h2>
+        jika form tidak perlu di jawab cukup ketik tidak ada 
+      </h2>
+
+      
+      <p class="catatan">
+
+        form  wajib isi terlebih dahulu
+
+      </p>
+
+    </div>
+
+    <!-- BUTTON -->
+    <ion-button
+    expand="block"
+    color="success"
+    (click)="simpan()">
+
+      <ion-icon
+      name="save-outline">
+      </ion-icon>
+
+      &nbsp;
+
+      DAFTAR SEKARANG
+
+    </ion-button>
+
+  </div>
+
+  <div style="height:90px;"></div>
+
+</ion-content>

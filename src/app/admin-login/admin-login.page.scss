@@ -1,0 +1,94 @@
+.bg{
+
+  --background:
+  linear-gradient(
+  180deg,
+  #11998e,
+  #38ef7d
+  );
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+.login-box{
+
+  background:white;
+
+  margin:30px;
+
+  margin-top:120px;
+
+  padding:30px;
+
+  border-radius:30px;
+
+  box-shadow:
+  0 15px 30px rgba(0,0,0,0.2);
+
+}
+
+.logo{
+
+  width:100px;
+
+  display:block;
+
+  margin:auto;
+
+  margin-bottom:20px;
+
+}
+
+.login-box h1{
+
+  text-align:center;
+
+  color:#11998e;
+
+  font-size:32px;
+
+  font-weight:bold;
+
+}
+
+.login-box p{
+
+  text-align:center;
+
+  color:#666;
+
+  margin-bottom:25px;
+
+}
+
+ion-item{
+
+  margin-top:15px;
+
+  border-radius:15px;
+
+}
+
+ion-button{
+
+  margin-top:25px;
+
+  --background:
+  linear-gradient(
+  90deg,
+  #11998e,
+  #38ef7d
+  );
+
+  height:55px;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+}

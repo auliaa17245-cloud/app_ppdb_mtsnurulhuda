@@ -1,0 +1,61 @@
+.bg{
+  --background:#f5f7fb;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:30px 20px;
+}
+
+.logo{
+  width:100px;
+  margin-bottom:10px;
+}
+
+.header h1{
+  font-size:28px;
+  font-weight:bold;
+  color:#16a085;
+}
+
+.header p{
+  color:gray;
+}
+
+/* GRID MENU */
+.menu-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:20px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:20px;
+  padding:25px 15px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card ion-icon{
+  font-size:45px;
+  color:#16a085;
+  margin-bottom:10px;
+}
+
+.card h2{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.card p{
+  font-size:13px;
+  color:gray;
+}
+
+.logout ion-icon{
+  color:red;
+}

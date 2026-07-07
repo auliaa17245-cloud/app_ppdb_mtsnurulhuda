@@ -1,0 +1,92 @@
+<ion-header>
+
+  <ion-toolbar color="success">
+
+    <ion-buttons slot="start">
+
+      <ion-back-button
+      defaultHref="/admin-dashboard">
+      </ion-back-button>
+
+    </ion-buttons>
+
+    <ion-title>
+      Data Siswa
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg">
+
+  <!-- SEARCH -->
+  <ion-searchbar
+placeholder="Cari siswa..."
+(ionInput)="cari($event)">
+</ion-searchbar>
+
+  <!-- CARD SISWA -->
+  <div
+  class="card"
+  *ngFor="let item of siswa">
+
+    <!-- FOTO -->
+    <div class="avatar">
+
+      <img
+       [src]="fotoUrl(item.foto)">
+
+    </div>
+
+    <!-- DATA -->
+    <h2>
+      {{item.nama}}
+    </h2>
+
+    <p>
+      NISN : {{item.nisn}}
+    </p>
+
+    <p>
+      Jenis Kelamin : {{item.jk}}
+    </p>
+
+    <p>
+      Asal Sekolah : {{item.asal_sekolah}}
+    </p>
+
+    <p>
+      Minat : {{item.minat}}
+    </p>
+
+    <p>
+      No HP : {{item.hp}}
+    </p>
+
+    <!-- AKSI -->
+    <div class="aksi">
+
+      <ion-button
+      size="small"
+      color="warning"
+      (click)="edit(item)">
+
+        Edit
+
+      </ion-button>
+
+      <ion-button
+      size="small"
+      color="danger"
+      (click)="hapus(item.id)">
+
+        Hapus
+
+      </ion-button>
+
+    </div>
+
+  </div>
+
+</ion-content>

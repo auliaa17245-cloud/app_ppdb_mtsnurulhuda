@@ -1,0 +1,93 @@
+<ion-header>
+
+  <ion-toolbar class="toolbar">
+
+    <ion-title>
+      Hasil Seleksi PPDB
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg">
+
+  <!-- HEADER -->
+  <div class="top-box">
+
+    <h1>Data Pendaftar</h1>
+
+    <p>
+      Semua Siswa Yang Akan Daftra Ulang 
+    </p>
+
+  </div>
+
+  <!-- CARD -->
+  <ion-card
+  *ngFor="let item of siswa"
+  class="card-siswa">
+
+    <!-- FOTO -->
+    <div class="avatar">
+
+     <img
+     [src]="fotoUrl(item.foto)">
+
+    </div>
+
+    <!-- ISI -->
+    <div class="isi">
+
+      <h2>
+        {{item.nama}}
+      </h2>
+
+      <p>
+        <ion-icon name="card-outline"></ion-icon>
+
+        NISN :
+        {{item.nisn}}
+      </p>
+
+      <p>
+        <ion-icon name="male-female-outline"></ion-icon>
+
+        JK :
+        {{item.jk}}
+      </p>
+
+      <p>
+        <ion-icon name="school-outline"></ion-icon>
+
+        Asal :
+        {{item.asal_sekolah}}
+      </p>
+
+      <p>
+        <ion-icon name="star-outline"></ion-icon>
+
+        Minat :
+        {{item.minat}}
+      </p>
+
+      <p>
+        <ion-icon name="call-outline"></ion-icon>
+
+        HP :
+        {{item.hp}}
+      </p>
+
+      <p>
+        <ion-icon name="location-outline"></ion-icon>
+
+        {{item.kabupaten}}
+      </p>
+
+    </div>
+
+  </ion-card>
+
+  <div style="height:90px;"></div>
+
+</ion-content>

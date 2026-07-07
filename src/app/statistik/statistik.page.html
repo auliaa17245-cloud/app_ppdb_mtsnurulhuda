@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-toolbar color="success">
+
+    <ion-buttons slot="start">
+
+      <ion-back-button
+      defaultHref="/admin-dashboard">
+      </ion-back-button>
+
+    </ion-buttons>
+
+    <ion-title>
+      Statistik PPDB
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg">
+
+  <div class="box">
+
+    <h1>📊 Statistik PPDB</h1>
+
+    <div class="card total">
+
+      <h2>Total Siswa</h2>
+
+      <h1>{{jumlah.total}}</h1>
+
+    </div>
+
+    <div class="card diterima">
+
+      <h2>Diterima</h2>
+
+      <h1>{{jumlah.diterima}}</h1>
+
+    </div>
+
+    <div class="card ditolak">
+
+      <h2>Ditolak</h2>
+
+      <h1>{{jumlah.ditolak}}</h1>
+
+    </div>
+
+    <div class="card pending">
+
+      <h2>Pending</h2>
+
+      <h1>{{jumlah.pending}}</h1>
+
+    </div>
+
+  </div>
+
+</ion-content>

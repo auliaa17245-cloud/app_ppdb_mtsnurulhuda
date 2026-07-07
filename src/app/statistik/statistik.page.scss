@@ -1,0 +1,70 @@
+.bg{
+
+  --background:#f5f7fb;
+
+}
+
+.box{
+
+  padding:20px;
+
+}
+
+.box h1{
+
+  text-align:center;
+  margin-bottom:25px;
+  color:#009688;
+  font-weight:bold;
+
+}
+
+.card{
+
+  padding:20px;
+  border-radius:20px;
+  margin-bottom:20px;
+  color:white;
+  text-align:center;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.card h2{
+
+  margin:0;
+  font-size:18px;
+
+}
+
+.card h1{
+
+  margin-top:10px;
+  font-size:40px;
+
+}
+
+.total{
+
+  background:linear-gradient(45deg,#00b894,#00cec9);
+
+}
+
+.diterima{
+
+  background:linear-gradient(45deg,#0984e3,#74b9ff);
+
+}
+
+.ditolak{
+
+  background:linear-gradient(45deg,#d63031,#ff7675);
+
+}
+
+.pending{
+
+  background:linear-gradient(45deg,#fdcb6e,#e17055);
+
+}

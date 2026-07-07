@@ -1,0 +1,366 @@
+.bg {
+  --background: linear-gradient(
+    180deg,
+    #dff7f2 0%,
+    #f5fffd 40%,
+    #ffffff 100%
+  );
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: white;
+
+  img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  p {
+    opacity: 0.9;
+    font-size: 15px;
+  }
+}
+
+/* CARD */
+.card {
+  background: white;
+  margin: 18px;
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+  h2 {
+    color: #16a085;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #444;
+    line-height: 1.9;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 14px;
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+  }
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 15px;
+}
+
+/* GALERI */
+.galeri {
+  margin: 18px;
+
+  h2 {
+    color: #16a085;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+.foto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+  img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+}
+
+/* INFO */
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 18px;
+}
+
+.box {
+  background: white;
+  padding: 18px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+  ion-icon {
+    font-size: 38px;
+    color: #16a085;
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    color: gray;
+    font-size: 14px;
+  }
+}
+
+/* LOGIN ADMIN */
+.login-admin {
+  margin: 20px;
+
+  ion-button {
+    --background: #16a085;
+    --border-radius: 15px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.bg{
+
+  --background:#f4f5f8;
+
+}
+
+.about-header{
+
+  text-align:center;
+
+  padding:30px 20px;
+
+  background:linear-gradient(
+  135deg,
+  #00c853,
+  #009688
+  );
+
+  color:white;
+
+  border-radius:0 0 30px 30px;
+
+}
+
+.about-header h1{
+
+  font-size:30px;
+
+  font-weight:bold;
+
+}
+
+.about-header p{
+
+  margin-top:10px;
+
+  opacity:0.9;
+
+}
+
+.about-card{
+
+  background:white;
+
+  margin:20px;
+
+  padding:18px;
+
+  border-radius:20px;
+
+  box-shadow:
+  0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+.about-img{
+
+  width:100%;
+
+  border-radius:15px;
+
+  margin-bottom:15px;
+
+}
+
+.about-card h2,
+.about-card h3{
+
+  color:#009688;
+
+  font-weight:bold;
+
+}
+
+.about-card p{
+
+  color:#666;
+
+  line-height:1.7;
+
+  margin-top:10px;
+
+}
+
+.profil-card{
+
+  background:white;
+
+  margin:20px;
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 6px 15px rgba(0,0,0,0.1);
+
+}
+
+.profil-img{
+
+  width:100%;
+  height:320px;
+
+  object-fit:cover;
+
+}
+
+.profil-content{
+
+  padding:20px;
+
+}
+
+.profil-content h2{
+
+  color:#00a884;
+
+  font-size:20px;
+
+  margin-bottom:5px;
+
+}
+
+.profil-content h1{
+
+  font-size:32px;
+
+  font-weight:bold;
+
+  color:#00897b;
+
+  margin-bottom:20px;
+
+}
+
+.info-box{
+
+  background:#f5f7fa;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  margin-bottom:20px;
+
+}
+
+.info-box p{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin:10px 0;
+
+  color:#555;
+
+  font-size:15px;
+
+}
+
+.info-box ion-icon{
+
+  color:#00c853;
+
+  font-size:20px;
+
+}
+
+.about-text{
+
+  color:#666;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+}
+
+.quote{
+
+  margin-top:20px;
+
+  background:linear-gradient(
+  135deg,
+  #00c853,
+  #009688
+  );
+
+  color:white;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  text-align:center;
+
+  font-style:italic;
+
+  font-weight:bold;
+
+}

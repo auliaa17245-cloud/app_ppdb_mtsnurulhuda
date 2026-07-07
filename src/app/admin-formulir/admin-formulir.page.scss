@@ -1,0 +1,161 @@
+.bg{
+
+  --background:#f5f7fb;
+
+}
+
+/* HEADER */
+ion-toolbar{
+
+  --background:linear-gradient(
+  135deg,
+  #00c853,
+  #64dd17
+  );
+
+  color:white;
+
+}
+
+ion-title{
+
+  font-weight:bold;
+  letter-spacing:1px;
+
+}
+
+/* CARD */
+ion-card{
+
+  border-radius:20px;
+
+  margin:16px;
+
+  box-shadow:
+  0 4px 15px rgba(0,0,0,0.08);
+
+  overflow:hidden;
+
+}
+
+/* FOTO */
+.foto{
+
+  width:120px;
+
+  height:120px;
+
+  object-fit:cover;
+
+  border-radius:15px;
+
+  border:4px solid #e8f5e9;
+
+  margin-bottom:15px;
+
+}
+
+/* JUDUL */
+.judul{
+
+  font-size:24px;
+
+  font-weight:bold;
+
+  color:#00a152;
+
+}
+
+.subjudul{
+
+  color:#666;
+
+  margin-bottom:10px;
+
+}
+
+/* SECTION */
+.section{
+
+  margin-top:20px;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  background:#f9f9f9;
+
+}
+
+.section h2{
+
+  font-size:17px;
+
+  color:#00a152;
+
+  margin-bottom:10px;
+
+  font-weight:bold;
+
+  border-left:5px solid #00c853;
+
+  padding-left:10px;
+
+}
+
+/* TEXT */
+p{
+
+  margin:7px 0;
+
+  color:#444;
+
+  font-size:14px;
+
+  line-height:1.5;
+
+}
+
+b{
+
+  color:#111;
+
+}
+
+/* BADGE */
+ion-badge{
+
+  font-size:13px;
+
+  padding:8px 12px;
+
+  border-radius:10px;
+
+}
+
+/* BUTTON */
+ion-button{
+
+  margin-top:12px;
+
+  height:45px;
+
+  font-weight:bold;
+
+  border-radius:12px;
+
+}
+
+/* BUTTON TERIMA */
+.btn-terima{
+
+  --background:#00c853;
+
+}
+
+/* BUTTON TOLAK */
+.btn-tolak{
+
+  --background:#ff1744;
+
+}

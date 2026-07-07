@@ -1,0 +1,65 @@
+<ion-content class="bg">
+
+  <!-- BOX LOGIN -->
+  <div class="login-box">
+
+    <!-- LOGO -->
+    <img
+    src="assets/icon/logo.png"
+    class="logo">
+
+    <h1>LOGIN ADMIN</h1>
+
+    <p>
+      PPDB MTS Nurul Huda 
+    </p>
+
+    <!-- USERNAME -->
+    <ion-item>
+
+      <ion-icon
+      name="person-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      placeholder="Username"
+      [(ngModel)]="username">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- PASSWORD -->
+    <ion-item>
+
+      <ion-icon
+      name="lock-closed-outline"
+      slot="start">
+      </ion-icon>
+
+      <ion-input
+      type="password"
+      placeholder="Password"
+      [(ngModel)]="password">
+      </ion-input>
+
+    </ion-item>
+
+    <!-- BUTTON -->
+    <ion-button
+    expand="block"
+    (click)="login()">
+
+      <ion-icon
+      name="log-in-outline">
+      </ion-icon>
+
+      &nbsp;
+
+      LOGIN
+
+    </ion-button>
+
+  </div>
+
+</ion-content>

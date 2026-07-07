@@ -1,0 +1,110 @@
+<ion-header>
+
+  <ion-toolbar color="success">
+
+    <ion-title>
+      Dashboard Admin
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg">
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <img
+    src="assets/icon/logo.png"
+    class="logo">
+
+    <h1>
+      Admin PPDB
+    </h1>
+
+    <p>
+      MTS Nurul Huda 
+    </p>
+
+  </div>
+
+  <!-- MENU -->
+  <div class="menu-grid">
+
+    <!-- DATA SISWA -->
+    <div
+        class="card"
+        routerLink="/data-siswa">
+
+      <ion-icon
+      name="people-outline">
+      </ion-icon>
+
+      <h2>
+        Data Siswa
+      </h2>
+
+      <p>
+        Kelola data pendaftaran siswa
+      </p>
+
+    </div>
+
+    <!-- FORMULIR -->
+    <div class="card"
+    routerLink="/admin-formulir">
+
+      <ion-icon
+      name="document-text-outline">
+      </ion-icon>
+
+      <h2>
+        Formulir
+      </h2>
+
+      <p>
+        Data formulir PPDB
+      </p>
+
+    </div>
+
+    <!-- LAPORAN -->
+    <div class="card"
+    routerLink="/statistik">
+
+      <ion-icon
+      name="bar-chart-outline">
+      </ion-icon>
+
+      <h2>
+        Laporan
+      </h2>
+
+      <p>
+        Statistik pendaftaran
+      </p>
+
+    </div>
+
+    <!-- LOGOUT -->
+    <div class="card logout"
+    routerLink="/tabs/tab1">
+
+      <ion-icon
+      name="log-out-outline">
+      </ion-icon>
+
+      <h2>
+        Logout
+      </h2>
+
+      <p>
+        Keluar dari dashboard
+      </p>
+
+    </div>
+
+  </div>
+
+</ion-content>

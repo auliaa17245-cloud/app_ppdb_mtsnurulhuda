@@ -1,0 +1,210 @@
+<ion-header>
+
+  <ion-toolbar color="success">
+
+    <ion-buttons slot="start">
+
+      <ion-back-button
+      defaultHref="/admin-dashboard">
+      </ion-back-button>
+
+    </ion-buttons>
+
+    <ion-title>
+      FORMULIR SISWA
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg">
+
+  <ion-card *ngFor="let x of data" class="card-siswa">
+
+    <!-- HEADER -->
+    <ion-card-header>
+
+      <div class="text-center">
+
+        <!-- FOTO -->
+       
+          <img
+          [src]="fotoUrl(x.foto)"
+          class="foto">
+
+        <ion-card-title class="judul">
+
+          {{x.nama}}
+
+        </ion-card-title>
+
+        <ion-card-subtitle class="subjudul">
+
+          NISN : {{x.nisn}}
+
+        </ion-card-subtitle>
+
+      </div>
+
+    </ion-card-header>
+
+    <ion-card-content>
+
+      
+      <div class="section">
+
+        <h2>DATA PRIBADI</h2>
+
+        <p><b>NIK :</b> {{x.nik}}</p>
+
+        <p><b>Jenis Kelamin :</b> {{x.jk}}</p>
+
+        <p><b>Tempat Lahir :</b> {{x.tempat_lahir}}</p>
+
+        <p><b>Tanggal Lahir :</b> {{x.tanggal_lahir}}</p>
+
+        <p><b>Agama :</b> {{x.agama}}</p>
+
+        <p><b>Status Anak :</b> {{x.status_anak}}</p>
+
+        <p><b>Anak Ke :</b> {{x.anakke}}</p>
+
+      </div>
+
+      
+      <div class="section">
+
+        <h2>ALAMAT SISWA</h2>
+
+        <p><b>Alamat :</b> {{x.alamat}}</p>
+
+        <p><b>Dusun :</b> {{x.dusun}}</p>
+
+        <p><b>Desa :</b> {{x.desa}}</p>
+
+        <p><b>Kecamatan :</b> {{x.kecamatan}}</p>
+
+        <p><b>Kabupaten :</b> {{x.kabupaten}}</p>
+
+        <p><b>Kode Pos :</b> {{x.kode_pos}}</p>
+
+      </div>
+
+     
+      <div class="section">
+
+        <h2>DATA SEKOLAH</h2>
+
+        <p><b>No HP :</b> {{x.hp}}</p>
+
+        <p><b>Asal Sekolah :</b> {{x.asal_sekolah}}</p>
+
+        <p><b>Minat :</b> {{x.minat}}</p>
+
+        <p><b>Nilai Akhir :</b> {{x.nilai_akhir}}</p>
+
+      </div>
+
+      
+      <div class="section">
+
+        <h2>DATA AYAH</h2>
+
+        <p><b>Nama Ayah :</b> {{x.nama_ayah}}</p>
+
+        <p><b>NIK Ayah :</b> {{x.nik_ayah}}</p>
+
+        <p><b>Pendidikan :</b> {{x.pendidikan_ayah}}</p>
+
+        <p><b>Pekerjaan :</b> {{x.pekerjaan_ayah}}</p>
+
+        <p><b>Penghasilan :</b> {{x.penghasilan_ayah}}</p>
+
+        <p><b>HP Ortu :</b> {{x.hp_ortu}}</p>
+
+        <p><b>Alamat :</b> {{x.alamat_ortu}}</p>
+
+      </div>
+
+      
+      <div class="section">
+
+        <h2>DATA IBU</h2>
+
+        <p><b>Nama Ibu :</b> {{x.nama_ibu}}</p>
+
+        <p><b>NIK Ibu :</b> {{x.nik_ibu}}</p>
+
+        <p><b>Pendidikan :</b> {{x.pendidikan_ibu}}</p>
+
+        <p><b>Pekerjaan :</b> {{x.pekerjaan_ibu}}</p>
+
+        <p><b>Penghasilan :</b> {{x.penghasilan_ibu}}</p>
+
+      </div>
+
+      
+      <div class="section">
+
+        <h2>DATA WALI</h2>
+
+        <p><b>Nama Wali :</b> {{x.nama_wali}}</p>
+
+        <p><b>NIK Wali :</b> {{x.nik_wali}}</p>
+
+        <p><b>Pendidikan :</b> {{x.pendidikan_wali}}</p>
+
+        <p><b>Pekerjaan :</b> {{x.pekerjaan_wali}}</p>
+
+        <p><b>Penghasilan :</b> {{x.penghasilan_wali}}</p>
+
+        <p><b>Alamat :</b> {{x.alamat_wali}}</p>
+
+        <p><b>HP :</b> {{x.hp_wali}}</p>
+
+      </div>
+
+      
+      <div class="section">
+
+        <h2>STATUS PENDAFTARAN</h2>
+
+        <div class="text-center">
+
+          <ion-badge
+          color="warning"
+          class="badge-status">
+
+            {{x.statuss}}
+
+          </ion-badge>
+
+        </div>
+
+      </div>
+
+      
+      <ion-button
+      expand="block"
+      class="btn-terima"
+      (click)="terima(x.id)">
+
+        TERIMA
+
+      </ion-button>
+
+      <ion-button
+      expand="block"
+      class="btn-tolak"
+      (click)="tolak(x.id)">
+
+        TOLAK
+
+      </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
